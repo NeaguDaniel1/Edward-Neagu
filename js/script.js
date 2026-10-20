@@ -76,7 +76,7 @@
     const d = findDest(id);
     if (!d) return;
     openModal(`
-      <div class="modal-img"><img src="${d.img}" alt="Ilustrație ${d.nume}"></div>
+      <div class="modal-img"><img src="${d.img}" alt="${d.nume}, ${d.tara}"></div>
       <div class="modal-content">
         <span class="eyebrow">${CATEGORII[d.categorie]} · ${d.zile} zile</span>
         <h2>${d.nume}, ${d.tara}</h2>
@@ -100,7 +100,7 @@
     return `
       <article class="card reveal">
         <div class="card-img">
-          <img src="${d.img}" alt="Ilustrație ${d.nume}" loading="lazy">
+          <img src="${d.img}" alt="${d.nume}, ${d.tara}" loading="lazy">
           <span class="badge ${d.popular ? "badge-hot" : ""}">${d.badge}</span>
         </div>
         <div class="card-body">
@@ -165,7 +165,7 @@
       return `
         <article class="card reveal">
           <div class="card-img">
-            <img src="${d.img}" alt="Ilustrație ${d.nume}" loading="lazy">
+            <img src="${d.img}" alt="${d.nume}, ${d.tara}" loading="lazy">
             <span class="badge badge-hot">-${o.reducere}%</span>
             <span class="badge badge-right">${o.tip}</span>
           </div>
@@ -316,7 +316,7 @@
       }
 
       $("#sum-img").src = d.img;
-      $("#sum-img").alt = "Ilustrație " + d.nume;
+      $("#sum-img").alt = d.nume + ", " + d.tara;
       $("#sum-nume").textContent = `${d.nume}, ${d.tara}`;
       $("#sum-info").textContent = `${d.zile} zile / ${nopti} nopți · ${persoane} ${persoane === 1 ? "persoană" : "persoane"} · ${masa.nume}`;
       $("#sum-rows").innerHTML = rows.join("");
