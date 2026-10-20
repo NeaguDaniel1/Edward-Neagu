@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf8b"/><stop offset="1" stop-color="#f69a6b"/></linearGradient>
+    <pattern id="a" width="24" height="34" patternUnits="userSpaceOnUse"><path d="M6 34 V14 a6 6 0 0 1 12 0 V34Z" fill="#7a4a24"/></pattern>
+    <clipPath id="cb"><path d="M50 225 V112 Q140 96 230 98 L250 110 L270 106 L292 124 L320 122 L350 138 V225Z"/></clipPath>
+    <pattern id="win" width="24" height="400" patternUnits="userSpaceOnUse"><rect x="8" y="120" width="8" height="8" fill="#7a4a24"/></pattern>
+    <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-opacity=".28"/><stop offset=".3" stop-opacity="0"/><stop offset=".7" stop-opacity="0"/><stop offset="1" stop-opacity=".28"/></linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#s)"/>
+  <circle cx="320" cy="62" r="30" fill="#fff2cc" opacity=".9"/>
+  <path d="M50 225 V112 Q140 96 230 98 L250 110 L270 106 L292 124 L320 122 L350 138 V225Z" fill="#e0a96d"/>
+  <g clip-path="url(#cb)">
+  <rect x="50" y="116" width="300" height="14" fill="url(#win)"/>
+  <rect x="50" y="136" width="300" height="34" fill="url(#a)"/>
+  <rect x="50" y="170" width="300" height="34" fill="url(#a)"/>
+  <rect x="50" y="204" width="300" height="21" fill="url(#a)"/>
+  <g fill="#c88a4f"><rect x="50" y="134" width="300" height="3"/><rect x="50" y="168" width="300" height="3"/><rect x="50" y="202" width="300" height="3"/></g>
+  <rect x="50" y="90" width="300" height="140" fill="url(#sh)"/>
+  </g>
+    <rect y="222" width="400" height="28" fill="#b9935a"/>
+  <g fill="#3d5a2a"><ellipse cx="22" cy="190" rx="9" ry="40"/><ellipse cx="372" cy="185" rx="10" ry="45"/><ellipse cx="392" cy="200" rx="7" ry="30"/></g>
+</svg>

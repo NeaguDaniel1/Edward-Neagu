@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fd0f5"/><stop offset="1" stop-color="#e3f6ff"/></linearGradient>
+    <linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a8fd6"/><stop offset="1" stop-color="#0b4f8f"/></linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#s)"/>
+  <circle cx="320" cy="58" r="24" fill="#fff7cf"/>
+  <rect y="150" width="400" height="100" fill="url(#w)"/>
+  <path d="M0 250 V110 Q50 100 110 112 Q170 120 210 150 Q235 175 250 250Z" fill="#e8d9bf"/>
+  <g fill="#fff" stroke="#d9cdb5">
+    <rect x="10" y="80" width="38" height="34"/><rect x="52" y="92" width="30" height="26"/>
+    <rect x="88" y="98" width="42" height="30"/><rect x="135" y="118" width="34" height="28"/>
+    <rect x="24" y="122" width="44" height="32"/><rect x="76" y="134" width="36" height="30"/>
+    <rect x="120" y="156" width="40" height="30"/><rect x="170" y="150" width="30" height="26"/>
+    <rect x="30" y="168" width="40" height="30"/><rect x="85" y="180" width="34" height="28"/>
+  </g>
+  <g fill="#1f5fbf">
+    <path d="M10 80 a19 19 0 0 1 38 0z"/><path d="M88 98 a21 21 0 0 1 42 0z"/>
+    <path d="M120 156 a20 20 0 0 1 40 0z"/><path d="M30 168 a20 20 0 0 1 40 0z"/>
+  </g>
+  <g fill="#2b6cc4">
+    <rect x="22" y="96" width="7" height="14" rx="3.5"/><rect x="34" y="96" width="7" height="14" rx="3.5"/>
+    <rect x="62" y="100" width="9" height="14" rx="4.5"/><rect x="104" y="108" width="10" height="16" rx="5"/>
+    <rect x="146" y="126" width="9" height="14" rx="4.5"/><rect x="40" y="132" width="10" height="16" rx="5"/>
+    <rect x="88" y="142" width="9" height="14" rx="4.5"/><rect x="134" y="168" width="10" height="14" rx="5"/>
+    <rect x="180" y="158" width="9" height="12" rx="4.5"/><rect x="46" y="180" width="9" height="14" rx="4.5"/>
+    <rect x="96" y="188" width="10" height="14" rx="5"/>
+  </g>
+  <g fill="#1f5fbf"><rect x="28" y="56" width="2" height="8"/><rect x="25" y="59" width="8" height="2"/></g>
+  <g stroke="#fff" opacity=".5" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M270 180 q10 -6 20 0 t20 0"/><path d="M330 215 q10 -6 20 0 t20 0"/><path d="M280 235 q10 -6 20 0"/>
+  </g>
+  <path d="M310 200 h44 l-7 10 h-30z" fill="#fff"/><path d="M332 198 V168 L350 196Z" fill="#fff"/>
+</svg>

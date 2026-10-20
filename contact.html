@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Orizont Travel</title>
+  <meta name="description" content="Contactează agenția Orizont Travel pentru oferte personalizate.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt=""><span>Orizont<b>Travel</b></span></a>
+      <button class="nav-toggle" aria-label="Deschide meniul" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html">Acasă</a>
+        <a href="destinatii.html">Destinații</a>
+        <a href="oferte.html">Oferte</a>
+        <a href="despre.html">Despre noi</a>
+        <a href="contact.html">Contact</a>
+        <a href="rezervare.html" class="btn btn-sm">Rezervă acum</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Acasă</a> / Contact</p>
+      <h1>Contactează-ne</h1>
+      <p>Ai o întrebare sau vrei o ofertă personalizată? Scrie-ne și îți răspundem în maximum 24 de ore.</p>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C240 100 480 0 720 40 C960 80 1200 20 1440 50 V90 H0Z" fill="#f6f9fb"/></svg>
+  </section>
+
+  <main class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="panel reveal">
+          <h2>Informații de contact</h2>
+          <div class="info-item"><div class="icon">📍</div><div><h4>Adresă</h4><p>Str. Exemplului nr. 10, Sector 1, București</p></div></div>
+          <div class="info-item"><div class="icon">📞</div><div><h4>Telefon</h4><p><a href="tel:+40700000000">0700 000 000</a></p></div></div>
+          <div class="info-item"><div class="icon">✉️</div><div><h4>E-mail</h4><p><a href="mailto:contact@orizont-travel.ro">contact@orizont-travel.ro</a></p></div></div>
+          <div class="info-item"><div class="icon">🕘</div><div><h4>Program</h4><p>Luni – Vineri: 9:00 – 18:00<br>Sâmbătă: 10:00 – 14:00</p></div></div>
+        </div>
+
+        <form id="contact-form" class="panel reveal" novalidate>
+          <h2>Trimite-ne un mesaj</h2>
+          <div class="form-grid">
+            <div class="field">
+              <label for="c-nume">Nume *</label>
+              <input type="text" id="c-nume" minlength="3" required placeholder="Ion Popescu">
+              <p class="error-msg">Introdu numele tău.</p>
+            </div>
+            <div class="field">
+              <label for="c-email">E-mail *</label>
+              <input type="email" id="c-email" required placeholder="nume@exemplu.ro">
+              <p class="error-msg">Introdu o adresă de e-mail validă.</p>
+            </div>
+            <div class="field full">
+              <label for="c-subiect">Subiect</label>
+              <select id="c-subiect">
+                <option>Cerere ofertă</option>
+                <option>Excursie școlară</option>
+                <option>Informații rezervare</option>
+                <option>Altceva</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="c-mesaj">Mesaj *</label>
+              <textarea id="c-mesaj" minlength="10" required placeholder="Scrie mesajul tău aici…"></textarea>
+              <p class="error-msg">Mesajul trebuie să aibă cel puțin 10 caractere.</p>
+            </div>
+            <div class="full"><button type="submit" class="btn btn-block">Trimite mesajul ✉️</button></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="map reveal" aria-label="Hartă stilizată cu locația agenției">
+        <svg viewBox="0 0 1180 340" role="img" aria-label="Hartă stilizată">
+          <rect width="1180" height="340" fill="#e8f1ec"/>
+          <path d="M0 250 Q300 200 520 260 T1180 230 V340 H0Z" fill="#cfe6f0"/>
+          <rect x="80" y="40" width="180" height="120" rx="12" fill="#d6ead9"/>
+          <rect x="880" y="60" width="200" height="110" rx="12" fill="#d6ead9"/>
+          <g stroke="#fff" stroke-width="18" stroke-linecap="round">
+            <path d="M0 190 H1180"/><path d="M380 0 V340"/><path d="M760 0 V340"/><path d="M0 70 Q500 110 1180 40"/>
+          </g>
+          <g stroke="#fff" stroke-width="8"><path d="M560 0 V340"/><path d="M0 130 H1180"/><path d="M200 190 V340"/><path d="M980 190 V340"/></g>
+          <g transform="translate(570 120)">
+            <ellipse cx="0" cy="70" rx="22" ry="7" fill="#000" opacity=".15"/>
+            <path d="M0 70 C-8 50 -30 34 -30 8 a30 30 0 0 1 60 0 C30 34 8 50 0 70Z" fill="#ff7a45"/>
+            <circle cx="0" cy="8" r="11" fill="#fff"/>
+          </g>
+          <rect x="610" y="96" width="210" height="46" rx="23" fill="#16232e"/>
+          <text x="715" y="125" fill="#fff" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Orizont Travel</text>
+        </svg>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""><span>Orizont<b>Travel</b></span></a>
+          <p>Organizăm vacanțe, excursii școlare și city break-uri în România și în toată lumea, din 2015.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="TikTok">♪</a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigare</h4>
+          <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="destinatii.html">Destinații</a></li>
+            <li><a href="oferte.html">Oferte speciale</a></li>
+            <li><a href="rezervare.html">Rezervare</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Vacanțe</h4>
+          <ul>
+            <li><a href="destinatii.html?cat=romania">România</a></li>
+            <li><a href="destinatii.html?cat=europa">Europa</a></li>
+            <li><a href="destinatii.html?cat=exotic">Exotic</a></li>
+            <li><a href="oferte.html">Excursii școlare</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 Str. Exemplului nr. 10, București</li>
+            <li>📞 <a href="tel:+40700000000">0700 000 000</a></li>
+            <li>✉️ <a href="mailto:contact@orizont-travel.ro">contact@orizont-travel.ro</a></li>
+            <li>🕘 Luni – Vineri: 9:00 – 18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Orizont Travel. Toate drepturile rezervate.</span>
+        <span>Proiect școlar – agenție de turism fictivă.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

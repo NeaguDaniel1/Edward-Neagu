@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe7bd"/><stop offset="1" stop-color="#ffab85"/></linearGradient>
+    <clipPath id="c"><circle cx="250" cy="215" r="190"/></clipPath>
+    <path id="pin" d="M0 0 l-11 24 h6 l-9 18 h28 l-9 -18 h6z"/>
+  </defs>
+  <circle cx="250" cy="215" r="205" fill="#fff" opacity=".14"/>
+  <g clip-path="url(#c)">
+    <rect width="500" height="420" fill="url(#sky)"/>
+    <circle cx="320" cy="175" r="48" fill="#fff4dc"/>
+    <path d="M40 330 L150 195 L220 265 L300 165 L430 305 L480 330 V420 H40Z" fill="#7cc6c1"/>
+    <path d="M150 195 L128 222 L140 215 L150 226 L159 213 L168 213Z" fill="#fff"/>
+    <path d="M300 165 L272 200 L288 192 L300 205 L314 191 L331 198Z" fill="#fff"/>
+    <path d="M0 345 Q120 295 250 335 T500 325 V420 H0Z" fill="#0e7c86"/>
+    <path d="M0 375 Q150 345 280 375 T500 365 V420 H0Z" fill="#095c63"/>
+    <g fill="#063f44">
+      <use href="#pin" x="95" y="305"/><use href="#pin" x="125" y="318"/><use href="#pin" x="380" y="300"/>
+      <use href="#pin" x="410" y="312"/><use href="#pin" x="350" y="318"/>
+    </g>
+    <ellipse cx="250" cy="392" rx="70" ry="10" fill="#5fc9c4" opacity=".7"/>
+  </g>
+  <g fill="#fff">
+    <ellipse cx="95" cy="120" rx="42" ry="14"/><ellipse cx="120" cy="108" rx="26" ry="14"/>
+    <ellipse cx="420" cy="95" rx="38" ry="12"/><ellipse cx="400" cy="86" rx="22" ry="12"/>
+  </g>
+  <path d="M40 175 Q170 40 345 88" stroke="#fff" stroke-width="3" stroke-dasharray="8 10" fill="none" stroke-linecap="round"/>
+  <g transform="translate(372 92) rotate(14)">
+    <path d="M-34 0 Q-34 -5 -26 -5 L22 -5 Q36 0 22 5 L-26 5 Q-34 5 -34 0Z" fill="#fff"/>
+    <path d="M-2 -4 L-16 -30 L-6 -30 L14 -4Z" fill="#ff7a45"/>
+    <path d="M-2 4 L-16 30 L-6 30 L14 4Z" fill="#ff7a45"/>
+    <path d="M-28 -3 L-36 -16 L-29 -16 L-20 -3Z" fill="#ff7a45"/>
+    <circle cx="18" cy="0" r="2" fill="#0e7c86"/>
+  </g>
+</svg>

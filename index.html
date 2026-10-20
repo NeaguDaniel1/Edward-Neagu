@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orizont Travel – Agenție de turism</title>
+  <meta name="description" content="Orizont Travel: vacanțe, excursii școlare și city break-uri în România și în lume.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt=""><span>Orizont<b>Travel</b></span></a>
+      <button class="nav-toggle" aria-label="Deschide meniul" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links">
+        <a href="index.html">Acasă</a>
+        <a href="destinatii.html">Destinații</a>
+        <a href="oferte.html">Oferte</a>
+        <a href="despre.html">Despre noi</a>
+        <a href="contact.html">Contact</a>
+        <a href="rezervare.html" class="btn btn-sm">Rezervă acum</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">✈️ Agenție de turism din 2015</span>
+          <h1>Descoperă lumea <span>alături de noi</span></h1>
+          <p class="lead">De la munții Carpați până la plajele din Bali, organizăm vacanțe de neuitat pentru familii, prieteni și grupuri școlare. Tu alegi destinația, noi ne ocupăm de rest.</p>
+          <div class="hero-actions">
+            <a href="destinatii.html" class="btn">Vezi destinațiile</a>
+            <a href="oferte.html" class="btn btn-ghost">Oferte speciale</a>
+          </div>
+          <div class="hero-stats">
+            <div><b>12.500+</b><span>călători fericiți</span></div>
+            <div><b>85</b><span>destinații</span></div>
+            <div><b>4,9 ★</b><span>nota clienților</span></div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="img/hero.svg" alt="Ilustrație cu munți, soare și un avion">
+          <div class="hero-badge one">🏖️ <div>Santorini<small>de la 629 €</small></div></div>
+          <div class="hero-badge two">⭐ 4,9 <div>Recenzii<small>peste 2.000</small></div></div>
+        </div>
+      </div>
+      <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C240 100 480 0 720 40 C960 80 1200 20 1440 50 V90 H0Z" fill="#f6f9fb"/></svg>
+    </section>
+
+    <div class="container">
+      <form class="search-box reveal" action="rezervare.html" method="get">
+        <div class="field">
+          <label for="s-dest">Destinație</label>
+          <select id="s-dest" name="dest" data-lista-destinatii></select>
+        </div>
+        <div class="field">
+          <label for="s-data">Data plecării</label>
+          <input type="date" id="s-data" name="data">
+        </div>
+        <div class="field">
+          <label for="s-pers">Persoane</label>
+          <select id="s-pers" name="pers">
+            <option value="1">1 persoană</option>
+            <option value="2" selected>2 persoane</option>
+            <option value="3">3 persoane</option>
+            <option value="4">4 persoane</option>
+            <option value="5">5 persoane</option>
+            <option value="6">6 persoane</option>
+          </select>
+        </div>
+        <button class="btn" type="submit">🔍 Caută vacanța</button>
+      </form>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">De ce noi?</span>
+          <h2>Călătorește fără griji</h2>
+          <p>Ne ocupăm de fiecare detaliu, ca tu să te bucuri doar de vacanță.</p>
+        </div>
+        <div class="grid grid-4">
+          <div class="feature reveal"><div class="icon">🛡️</div><h3>Siguranță garantată</h3><p>Licență de turism, asigurare și asistență pe toată durata călătoriei.</p></div>
+          <div class="feature reveal"><div class="icon">💰</div><h3>Prețuri corecte</h3><p>Fără costuri ascunse. Plata se poate face și în rate fără dobândă.</p></div>
+          <div class="feature reveal"><div class="icon">🧭</div><h3>Ghizi experimentați</h3><p>Ghizi autorizați care vorbesc limba română în toate circuitele.</p></div>
+          <div class="feature reveal"><div class="icon">📞</div><h3>Suport 24/7</h3><p>Suntem la un telefon distanță, zi și noapte, oriunde te-ai afla.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Destinații populare</span>
+          <h2>Cele mai iubite vacanțe</h2>
+          <p>Alegerile preferate ale clienților noștri în acest sezon.</p>
+        </div>
+        <div class="grid grid-4" data-destinatii="populare"></div>
+        <div class="text-center mt-40"><a href="destinatii.html" class="btn btn-outline">Vezi toate destinațiile →</a></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container grid grid-4">
+        <div><div class="stat-num" data-count="12500" data-suffix="+">0</div><p>Călători fericiți</p></div>
+        <div><div class="stat-num" data-count="85">0</div><p>Destinații</p></div>
+        <div><div class="stat-num" data-count="320">0</div><p>Excursii școlare</p></div>
+        <div><div class="stat-num" data-count="98" data-suffix="%">0</div><p>Clienți mulțumiți</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Simplu și rapid</span>
+          <h2>Cum funcționează?</h2>
+        </div>
+        <div class="grid grid-3 steps">
+          <div class="step reveal"><h3>Alegi destinația</h3><p>Răsfoiești destinațiile și ofertele noastre și o alegi pe cea care ți se potrivește.</p></div>
+          <div class="step reveal"><h3>Rezervi online</h3><p>Completezi formularul de rezervare, vezi prețul calculat pe loc și trimiți cererea.</p></div>
+          <div class="step reveal"><h3>Pleci în vacanță</h3><p>Primești documentele de călătorie și pleci liniștit. Noi rămânem alături de tine.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Testimoniale</span>
+          <h2>Ce spun clienții noștri</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="testimonial reveal">
+            <div class="stars">★★★★★</div>
+            <p>„Excursia la Brașov cu toată clasa a fost perfect organizată. Ghidul a fost super, iar copiii încă vorbesc despre Castelul Bran!”</p>
+            <div class="person"><div class="avatar">AM</div><div><strong>Ana M.</strong><small>Profesoară, București</small></div></div>
+          </div>
+          <div class="testimonial reveal">
+            <div class="stars">★★★★★</div>
+            <p>„Am fost în Santorini în luna de miere. Hotelul a fost exact ca în poze, iar apusul din Oia… de nedescris. Mulțumim!”</p>
+            <div class="person"><div class="avatar c2">RD</div><div><strong>Radu și Diana</strong><small>Cluj-Napoca</small></div></div>
+          </div>
+          <div class="testimonial reveal">
+            <div class="stars">★★★★★</div>
+            <p>„Prima noastră vacanță exotică, în Bali. Totul a mers ca pe roate, iar asistența în limba română ne-a ajutat enorm.”</p>
+            <div class="person"><div class="avatar c3">IP</div><div><strong>Ioana P.</strong><small>Iași</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div>
+          <h2>Primește ofertele înaintea tuturor!</h2>
+          <p>Abonează-te la newsletter și primești 5% reducere la prima rezervare.</p>
+        </div>
+        <form class="newsletter" data-newsletter novalidate>
+          <input type="email" placeholder="Adresa ta de e-mail" aria-label="Adresa de e-mail" required>
+          <button class="btn btn-light" type="submit">Abonează-mă</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""><span>Orizont<b>Travel</b></span></a>
+          <p>Organizăm vacanțe, excursii școlare și city break-uri în România și în toată lumea, din 2015.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="TikTok">♪</a>
+          </div>
+        </div>
+        <div>
+          <h4>Navigare</h4>
+          <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="destinatii.html">Destinații</a></li>
+            <li><a href="oferte.html">Oferte speciale</a></li>
+            <li><a href="rezervare.html">Rezervare</a></li>
+            <li><a href="despre.html">Despre noi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Vacanțe</h4>
+          <ul>
+            <li><a href="destinatii.html?cat=romania">România</a></li>
+            <li><a href="destinatii.html?cat=europa">Europa</a></li>
+            <li><a href="destinatii.html?cat=exotic">Exotic</a></li>
+            <li><a href="oferte.html">Excursii școlare</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>📍 Str. Exemplului nr. 10, București</li>
+            <li>📞 <a href="tel:+40700000000">0700 000 000</a></li>
+            <li>✉️ <a href="mailto:contact@orizont-travel.ro">contact@orizont-travel.ro</a></li>
+            <li>🕘 Luni – Vineri: 9:00 – 18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Orizont Travel. Toate drepturile rezervate.</span>
+        <span>Proiect școlar – agenție de turism fictivă.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
