@@ -32,6 +32,13 @@
   /* ---------- anul curent în footer ---------- */
   $$("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 
+  /* ---------- hartă: fără internet (de pe stick) arătăm harta desenată ---------- */
+  const harta = $(".map iframe");
+  if (harta && !navigator.onLine) {
+    harta.remove();
+    $(".map-offline").hidden = false;
+  }
+
   /* ---------- toast ---------- */
   let toastTimer;
   function toast(msg) {
@@ -82,6 +89,10 @@
         <h2>${d.nume}, ${d.tara}</h2>
         <p class="rating">★ ${d.rating} / 5</p>
         <p style="margin-top:10px">${d.descriere}</p>
+        <h3 class="modal-sub">📍 Ce vizitezi</h3>
+        <div class="sights">${d.atractii.map((a) => `<div class="sight"><strong>${a.nume}</strong><span>${a.text}</span></div>`).join("")}</div>
+        <p class="best-time">🗓️ <strong>Cea mai bună perioadă:</strong> ${d.perioada}</p>
+        <h3 class="modal-sub">✅ Pachetul include</h3>
         <ul class="check-list">${d.include.map((i) => `<li>${i}</li>`).join("")}</ul>
         <div class="modal-actions">
           <div class="price"><small>de la</small> ${euro(d.pret)}<small> / persoană</small></div>
