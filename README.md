@@ -1,4 +1,4 @@
-# Orizont Travel – site de agenție de turism (proiect școlar)
+# Edward Travel – site de agenție de turism (proiect școlar)
 
 Site static (HTML + CSS + JavaScript), **fără nicio dependență externă**, așa că merge:
 - **offline, de pe stick** – deschizi direct `index.html`;
@@ -39,10 +39,10 @@ Structură: `css/style.css` (stiluri), `js/data.js` (destinațiile și ofertele 
 
 ### Varianta C – din terminal
 ```bash
-npx wrangler pages deploy . --project-name=orizont-travel
+npx wrangler pages deploy . --project-name=edward-travel
 ```
 
 ## Personalizare rapidă
-- **Numele agenției:** caută „Orizont” în fișierele `.html` și înlocuiește.
+- **Numele agenției:** caută „Edward” în fișierele `.html` și înlocuiește.
 - **Destinații / prețuri:** editează `js/data.js`.
 - **Culori:** variabilele de la începutul `css/style.css` (`--primary`, `--accent`).

@@ -1,5 +1,5 @@
 /* ==========================================================
-   Orizont Travel – interactivitate
+   Edward Travel – interactivitate
    Funcționează și offline (de pe stick), fără servere externe.
    ========================================================== */
 (function () {

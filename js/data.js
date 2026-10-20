@@ -201,5 +201,5 @@ const OFERTE = [
 /* coduri de reducere acceptate pe pagina de rezervare */
 const CODURI = {
   SCOALA10: 10,
-  ORIZONT5: 5
+  EDWARD5: 5
 };
